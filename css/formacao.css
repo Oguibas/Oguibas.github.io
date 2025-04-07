@@ -1,0 +1,133 @@
+.formacao-container {
+    max-width: 1200px;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    margin: 0 auto;
+   
+}
+
+.formacao {
+    background: #141414;
+    color: #f1f1f1;
+}
+
+.formacao .subtitulo {
+    color: #000000;
+}
+
+.formacao-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+    color: #a3a3a3;
+}
+
+
+.formacao-texto strong {
+    color: #ffffff;
+}
+
+
+.faculdade-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.faculdade {
+    flex: 0.6;
+    background: #000000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.faculdade-tipo {
+    color: #a3a3a3;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.faculdade-curso {
+    flex: 1;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+.faculdade-curso::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: linear-gradient(to right, #FFB75E, #ED8F03);
+    top: 8px;
+    left: -30px;
+}
+
+.faculdade-nome {
+    color: #a3a3a3;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+
+
+.cursos-extra h3 {
+    font-size: 0.875rem;
+    font-size: 1.4;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    margin-bottom: 30px;
+}
+
+.cursos-extra li {
+    font-size: 0.875rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.cursos-extra span {
+    color: #8f8f8f;
+}
+
+
+.cursos {
+    margin-bottom: 60px;
+}
+
+.cursos li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.idioma li {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+@media (max-width: 800px) {
+    .formacao-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .formacao .subtitulo {
+        font-size: 2rem;
+    }
+
+    .formacao-texto {
+        font-size: 0.875rem;
+    }
+}
+
